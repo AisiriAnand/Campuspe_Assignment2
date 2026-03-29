@@ -37,7 +37,7 @@ def get_cohere_response(client, prompt):
     """Send request to Cohere API and return the response."""
     try:
         response = client.chat(
-            model="command",
+            model="c4ai-aya-23-35b",
             message=prompt,
             temperature=0.7,
             max_tokens=1000
